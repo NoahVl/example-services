@@ -14,7 +14,7 @@ entities:
 
   - type: motorSim.simMotorController
     controllerName: sim-controller1
-    numAxes: 5
+    numAxes: 4
     P: "XF:11BMB-ES{Chm:Smpl-Ax:"
 
   - type: motorSim.simMotorAxis
@@ -35,13 +35,6 @@ entities:
     controller: sim-controller1
     ADDR: 3
     M: theta}Mtr
-    DESC: Motor theta
-    home: 1
-
-  - type: motorSim.simMotorAxis
-    controller: sim-controller1
-    ADDR: 4
-    M: phi}Mtr
     DESC: Motor theta
     home: 1
 
@@ -69,4 +62,16 @@ entities:
     ADDR: 3
     M: Phi}Mtr
     DESC: Motor phi
+    home: 1
+
+  - type: motorSim.simMotorController
+    controllerName: sim-controller3
+    numAxes: 2
+    P: "XF:11BMB-ES{SM:1-Ax:"
+
+  - type: motorSim.simMotorAxis
+    controller: sim-controller3
+    ADDR: 1
+    M: Srot}Mtr
+    DESC: Srot motor used for phiabs
     home: 1
