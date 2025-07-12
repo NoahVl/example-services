@@ -73,5 +73,5 @@ entities:
     controller: sim-controller3
     ADDR: 1
     M: Srot}Mtr
-    DESC: Srot motor used for phiabs
+    DESC: Srot motor used for phiabs etc.
     home: 1
